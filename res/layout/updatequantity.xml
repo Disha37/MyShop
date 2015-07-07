@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Product ID:"
+         android:textColor="#9999CC"        
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etproducttochange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter New  Quantity:"
+                 android:textColor="#9999CC"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etquantochange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:ems="10" />
+    
+<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text=""
+       />
+    <Button
+        android:id="@+id/bUpdatequantity"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/mybutton"
+        android:alpha="0.7"
+        android:layout_gravity="center"
+       android:textColor="#000000"
+        android:text="UPDATE PRODUCT QUANTITY " />
+    
+    
+</LinearLayout>

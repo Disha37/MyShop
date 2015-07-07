@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:padding="20dp">
+   
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:id="@+id/tablelayout1"
+        android:weightSum="4" >"
+
+       <TableRow> 
+            <TextView
+          android:textColor="#9999CC"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="No."
+        
+        android:layout_weight="1" />
+             <TextView
+       
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="NAME"
+              android:textColor="#9999CC"
+                 android:layout_weight="1" />
+             
+               <TextView
+                
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="QUANTITY"
+                    android:textColor="#9999CC"
+                android:layout_weight="1"
+            />
+                    <TextView
+                
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="PRICE(Rs)"
+                 android:textColor="#9999CC"
+                android:layout_weight="1"
+                  />
+
+    </TableRow>
+        
+ </TableLayout>
+       <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+       />
+        <ScrollView  android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:orientation="vertical"
+		 			android:layout_width="match_parent"
+		 			 android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvStock"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="get info from db" 
+              android:textColor="#9999CC"
+              />
+</LinearLayout>
+   
+</ScrollView>
+
+
+</LinearLayout>

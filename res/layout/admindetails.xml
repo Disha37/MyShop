@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ 
+    android:padding="20dp" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvshowname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter ADMIN Password to create a new ADMIN account :"
+                         android:textColor="#9999CC"
+                         />
+
+                    
+                    <EditText
+                        android:id="@+id/etcreateadmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" />
+
+                    <Button
+                        android:id="@+id/bcreateadmin"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                         android:background="@drawable/mybutton"
+                         android:alpha="0.7"
+                         
+                         android:textColor="#000000"
+                         
+                        android:text="CREATE"/>
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:orientation="vertical" >
+                        
+                       
+
+                    <TextView
+                        android:id="@+id/tvold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                                           android:textColor="#9999CC"
+                        android:text="Enter your old Password :" />
+
+                    <EditText
+                        android:id="@+id/etold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" />
+
+                    <TextView
+                        android:id="@+id/tvnew"
+                        android:layout_width="wrap_content"
+                                                 android:textColor="#9999CC"
+                        android:layout_height="wrap_content"
+                        android:text="Enter the new password :" />
+
+                    <EditText
+                        android:id="@+id/etnew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" />
+                    
+                    <Button
+                        android:id="@+id/bchangepassword"
+                       android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                         android:background="@drawable/mybutton"
+                         android:alpha="0.7"
+                           android:textColor="#000000"
+                        android:text="CHANGE PASSWORD" />
+                </LinearLayout>
+ 
+                
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

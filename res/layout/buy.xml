@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+          android:textColor="#9999CC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        android:text="Enter Product ID:" />
+
+    <EditText
+        android:id="@+id/etproductid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bVIEWPRODUCT"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="View Details"
+       android:background="@drawable/mybutton"
+        android:alpha="0.7"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvproductname"
+         android:padding="10dp"
+          android:textColor="#9999CC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product name is " />
+
+    <TextView
+        android:id="@+id/tvproductprice"
+        android:layout_width="wrap_content"
+         android:padding="10dp"
+            android:textColor="#9999CC"
+        android:layout_height="wrap_content"
+        android:text="Price of product (in Rs)" />
+
+    <Button
+        android:id="@+id/baddbasket"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+         android:padding="10dp"
+         android:background="@drawable/mybutton"
+        android:alpha="0.7"
+        android:textColor="#000000"
+        android:text="Add to Basket "
+        />
+
+     <TextView
+        android:id="@+id/tv"
+         android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    
+    <Button
+        android:id="@+id/bremovebasket"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+         android:padding="10dp"
+        android:text="Remove from Basket"
+        android:layout_gravity="center"
+        android:background="@drawable/mybutton"
+        android:alpha="0.7"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvQuanpurchased"
+         android:padding="10dp"
+           android:textColor="#9999CC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity Purchased:" />
+
+    <Button
+        android:id="@+id/bfinalpay"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="   PAY "
+        android:background="@drawable/mybutton"
+        android:alpha="0.7"
+        android:textColor="#000000" />
+
+</LinearLayout>
